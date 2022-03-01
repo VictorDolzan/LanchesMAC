@@ -1,5 +1,7 @@
 using LanchesMAC.Context;
 using Microsoft.EntityFrameworkCore;
+using LanchesMAC.Repositories;
+using LanchesMAC.Repositories.Interfaces;
 
 namespace LanchesMAC;
 
@@ -18,6 +20,9 @@ public class Startup
         services.AddDbContext<AppDbContext>(options =>
         options.UseMySql(Configuration.GetConnectionString("DefaultConnection"),
         new MySqlServerVersion(new Version())));
+
+        services.AddTransient<ILancheRepository, LancheRepository>();
+        services.AddTransient<ICategoriaRepository, CategoriaRepository>();
 
         services.AddControllersWithViews();
     }
