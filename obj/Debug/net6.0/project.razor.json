@@ -16298,6 +16298,11 @@
   "RootNamespace": "LanchesMAC",
   "Documents": [
     {
+      "FilePath": "/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/Views/Lanche/List.cshtml",
+      "TargetPath": "Views\\Lanche\\List.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
