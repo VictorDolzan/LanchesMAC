@@ -16308,6 +16308,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/Views/Shared/_Carousel.cshtml",
+      "TargetPath": "Views\\Shared\\_Carousel.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
