@@ -17,7 +17,7 @@ public class Startup
     {
         services.AddDbContext<AppDbContext>(options =>
         options.UseMySql(Configuration.GetConnectionString("DefaultConnection"),
-         new MySqlServerVersion(new Version())));
+        new MySqlServerVersion(new Version())));
 
         services.AddControllersWithViews();
     }
