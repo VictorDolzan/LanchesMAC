@@ -2,6 +2,7 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using LanchesMAC.Models;
 using LanchesMAC.Repositories.Interfaces;
+using LanchesMAC.ViewModels;
 
 namespace LanchesMAC.Controllers
 {
@@ -14,8 +15,13 @@ namespace LanchesMAC.Controllers
         }
         public IActionResult List()
         {
-            var lanche = _lancheRepository.Lanches;
-            return View(lanche);
+            // var lanche = _lancheRepository.Lanches;
+            // return View(lanche);
+            var lanchesListViewModel = new LancheListViewModel();
+            lanchesListViewModel.Lanches = _lancheRepository.Lanches;
+            lanchesListViewModel.CategoriaAtual = "Categoria Atual";
+
+            return View(lanchesListViewModel);
         }
     }
 }
