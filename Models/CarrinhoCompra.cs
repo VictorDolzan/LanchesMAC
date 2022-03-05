@@ -85,10 +85,11 @@ namespace LanchesMAC.Models
         {
             return CarrinhoCompraItems??
                     (CarrinhoCompraItems = 
-                    _context.CarrinhoCompraItens
-                    .Where(c => c.CarrinhoCompraId == CarrinhoCompraId)
-                    .Include(s => s.Lanche)
-                    .ToList());
+                     _context.CarrinhoCompraItens
+                     .Where(c => c.CarrinhoCompraId == CarrinhoCompraId)
+                     .Include(s => s.Lanche)
+                     .ToList()
+                    );
         }
 
         public void LimparCarrinho()
@@ -103,8 +104,8 @@ namespace LanchesMAC.Models
         public decimal GetCarrinhoCompraTotal()
         {
             var total = _context.CarrinhoCompraItens
-                                .Where(carrinho => CarrinhoCompraId == CarrinhoCompraId)
-                                .Select(c => c.Lanche.Preco * c.Quantidade).Sum();
+                        .Where(carrinho => CarrinhoCompraId == CarrinhoCompraId)
+                        .Select(c => c.Lanche.Preco * c.Quantidade).Sum();
             
             return total;
         }

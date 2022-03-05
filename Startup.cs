@@ -2,6 +2,7 @@ using LanchesMAC.Context;
 using Microsoft.EntityFrameworkCore;
 using LanchesMAC.Repositories;
 using LanchesMAC.Repositories.Interfaces;
+using LanchesMAC.Models;
 
 namespace LanchesMAC;
 
@@ -23,6 +24,7 @@ public class Startup
 
         services.AddTransient<ILancheRepository, LancheRepository>();
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+        services.AddScoped(sp => CarrinhoCompra.GetCarrinho(sp));
         
         services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
