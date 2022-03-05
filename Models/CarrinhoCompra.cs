@@ -37,7 +37,7 @@ namespace LanchesMAC.Models
                 s.CarrinhoCompraId == CarrinhoCompraId
             );
 
-            if(carrinhoCompraItem == null)
+            if (carrinhoCompraItem == null)
             {
                 carrinhoCompraItem = new CarrinhoCompraItem
                 {
@@ -63,14 +63,17 @@ namespace LanchesMAC.Models
 
             var quantidadeLocal = 0;
 
-            if(carrinhoCompraItem != null)
+            if (carrinhoCompraItem != null)
             {
-                carrinhoCompraItem.Quantidade--;
-                quantidadeLocal = carrinhoCompraItem.Quantidade;
-            }
-            else
-            {
-                _context.CarrinhoCompraItens.Remove(carrinhoCompraItem);
+                if (carrinhoCompraItem.Quantidade > 1)
+                {
+                    carrinhoCompraItem.Quantidade--;
+                    quantidadeLocal = carrinhoCompraItem.Quantidade;
+                }
+                else
+                {
+                    _context.CarrinhoCompraItens.Remove(carrinhoCompraItem);
+                }
             }
             _context.SaveChanges();
             return quantidadeLocal;
