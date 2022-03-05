@@ -95,9 +95,18 @@ namespace LanchesMAC.Models
         {
             var carrinhoItens = _context.CarrinhoCompraItens
                                 .Where(carrinho => carrinho.CarrinhoCompraId == CarrinhoCompraId);
-                                
+
             _context.CarrinhoCompraItens.RemoveRange(carrinhoItens);
             _context.SaveChanges();
+        }
+
+        public decimal GetCarrinhoCompraTotal()
+        {
+            var total = _context.CarrinhoCompraItens
+                                .Where(carrinho => CarrinhoCompraId == CarrinhoCompraId)
+                                .Select(c => c.Lanche.Preco * c.Quantidade).Sum();
+            
+            return total;
         }
     }
 }
