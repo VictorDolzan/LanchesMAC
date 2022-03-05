@@ -53,5 +53,27 @@ namespace LanchesMAC.Models
             }
             _context.SaveChanges();
         }
+
+        public int RemoverDoCarrinho(Lanche lanche)
+        {
+            var carrinhoCompraItem = _context.CarrinhoCompraItens.SingleOrDefault(
+                s => s.Lanche.LancheId == lanche.LancheId &&
+                s.CarrinhoCompraId == CarrinhoCompraId
+            );
+
+            var quantidadeLocal = 0;
+
+            if(carrinhoCompraItem != null)
+            {
+                carrinhoCompraItem.Quantidade--;
+                quantidadeLocal = carrinhoCompraItem.Quantidade;
+            }
+            else
+            {
+                _context.CarrinhoCompraItens.Remove(carrinhoCompraItem);
+            }
+            _context.SaveChanges();
+            return quantidadeLocal;
+        }
     }
 }
