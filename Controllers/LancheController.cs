@@ -9,6 +9,7 @@ namespace LanchesMAC.Controllers
     public class LancheController : Controller
     {
         private readonly ILancheRepository _lancheRepository;
+
         public LancheController(ILancheRepository lancheRepository)
         {
             _lancheRepository = lancheRepository;
@@ -22,6 +23,6 @@ namespace LanchesMAC.Controllers
             lanchesListViewModel.CategoriaAtual = "Categoria Atual";
 
             return View(lanchesListViewModel);
-        }
+        } 
     }
-}
+} 
