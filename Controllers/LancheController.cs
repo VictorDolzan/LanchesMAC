@@ -39,6 +39,7 @@ namespace LanchesMAC.Controllers
                lanches = _lancheRepository.Lanches
                         .Where(l => l.Categoria.CategoriaNome.Equals(categoria))
                         .OrderBy(c => c.Name);
+                        
                categoriaAtual = categoria;
             }
 
