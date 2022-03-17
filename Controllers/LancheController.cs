@@ -26,16 +26,19 @@ namespace LanchesMAC.Controllers
             }
             else
             {
-               if(string.Equals("Normal", categoria, StringComparison.OrdinalIgnoreCase))
-               {
-                   lanches = _lancheRepository.Lanches.Where(l => l.Categoria.CategoriaNome.Equals("Normal"))
-                                                      .OrderBy(l => l.Name);
-               }
-               else
-               {
-                   lanches = _lancheRepository.Lanches.Where(l => l.Categoria.CategoriaNome == "Natural")
-                                                      .OrderBy(l => l.Name);
-               }
+            //    if(string.Equals("Normal", categoria, StringComparison.OrdinalIgnoreCase))
+            //    {
+            //        lanches = _lancheRepository.Lanches.Where(l => l.Categoria.CategoriaNome.Equals("Normal"))
+            //                                           .OrderBy(l => l.Name);
+            //    }
+            //    else
+            //    {
+            //        lanches = _lancheRepository.Lanches.Where(l => l.Categoria.CategoriaNome == "Natural")
+            //                                           .OrderBy(l => l.Name);
+            //    }
+               lanches = _lancheRepository.Lanches
+                        .Where(l => l.Categoria.CategoriaNome.Equals(categoria))
+                        .OrderBy(c => c.Name);
                categoriaAtual = categoria;
             }
 
