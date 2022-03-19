@@ -1,9 +1,9 @@
-@model CarrinhoCompraViewModel
+@model LanchesMAC.ViewModels.CarrinhoCompraViewModel
 
 <div class="Container">
 <div class="row">
 
-    <img src="https://img.icons8.com/dusk/64/000000/shopping-cart-loaded--v1.png"/>
+    <img src="https://img.icons8.com/dusk/64/000000/shopping-cart-loaded--v1.png" style="width: 100px;"/>
 
     <div>
         <h4>Seu carrinho de compras : </h4>
@@ -34,7 +34,7 @@
                     
                     <td class="text-center">
                         <a asp-controller="CarrinhoCompra" asp-action="RemoverItemDoCarrinhoCompra"
-                        asp-route-lancheId="@item.Lanche.LancheId"><img src="https://img.icons8.com/dusk/64/000000/full-trash.png"/>
+                        asp-route-lancheId="@item.Lanche.LancheId"><img src="https://img.icons8.com/dusk/64/000000/full-trash.png" style="width: 50px;"/>
                         </a>
                     </td>
 
