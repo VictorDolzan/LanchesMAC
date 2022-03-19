@@ -52,7 +52,7 @@ namespace LanchesMAC.Controllers
             return View(lanchesListViewModel);
         } 
 
-        public IActionResult Details(int? id)
+        public IActionResult Details(int id)
         {
             var lanche = _lancheRepository.Lanches.FirstOrDefault(l => l.LancheId == id);
             return View(lanche);
