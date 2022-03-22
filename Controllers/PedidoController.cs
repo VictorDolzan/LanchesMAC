@@ -47,7 +47,6 @@ namespace LanchesMAC.Controllers
             pedido.TotalItensPedido = totalItensPedido;
             pedido.PedidoTotal = precoTotalPedido;
 
-
             //validar os dados do pedido
             if(ModelState.IsValid)
             {
@@ -65,7 +64,6 @@ namespace LanchesMAC.Controllers
                 return View("~/Views/Pedido/CheckoutCompleto.cshtml", pedido);
             }
             return View(pedido);
-
         }
     }
 }
