@@ -1,6 +1,7 @@
 using LanchesMAC.Repositories.Interfaces;
 using LanchesMAC.Models;
 using LanchesMAC.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace LanchesMAC.Repositories
 {
