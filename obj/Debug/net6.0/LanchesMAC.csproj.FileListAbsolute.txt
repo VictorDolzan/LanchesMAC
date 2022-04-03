@@ -35,3 +35,40 @@
 /home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/bin/Debug/net6.0/Pomelo.EntityFrameworkCore.MySql.dll
 /home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/bin/Debug/net6.0/Pomelo.EntityFrameworkCore.MySql.Design.dll
 /home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/obj/Debug/net6.0/LanchesMAC.csproj.CopyComplete
+D:\LanchesMAC\bin\Debug\net6.0\appsettings.Development.json
+D:\LanchesMAC\bin\Debug\net6.0\appsettings.json
+D:\LanchesMAC\bin\Debug\net6.0\LanchesMAC.staticwebassets.runtime.json
+D:\LanchesMAC\bin\Debug\net6.0\LanchesMAC.exe
+D:\LanchesMAC\bin\Debug\net6.0\LanchesMAC.deps.json
+D:\LanchesMAC\bin\Debug\net6.0\LanchesMAC.runtimeconfig.json
+D:\LanchesMAC\bin\Debug\net6.0\LanchesMAC.dll
+D:\LanchesMAC\bin\Debug\net6.0\LanchesMAC.pdb
+D:\LanchesMAC\bin\Debug\net6.0\Humanizer.dll
+D:\LanchesMAC\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\LanchesMAC\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\LanchesMAC\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\LanchesMAC\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\LanchesMAC\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+D:\LanchesMAC\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\LanchesMAC\bin\Debug\net6.0\MySqlConnector.dll
+D:\LanchesMAC\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\LanchesMAC\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.Design.dll
+D:\LanchesMAC\obj\Debug\net6.0\LanchesMAC.GeneratedMSBuildEditorConfig.editorconfig
+D:\LanchesMAC\obj\Debug\net6.0\LanchesMAC.AssemblyInfoInputs.cache
+D:\LanchesMAC\obj\Debug\net6.0\LanchesMAC.AssemblyInfo.cs
+D:\LanchesMAC\obj\Debug\net6.0\LanchesMAC.csproj.CoreCompileInputs.cache
+D:\LanchesMAC\obj\Debug\net6.0\LanchesMAC.MvcApplicationPartsAssemblyInfo.cache
+D:\LanchesMAC\obj\Debug\net6.0\LanchesMAC.RazorAssemblyInfo.cache
+D:\LanchesMAC\obj\Debug\net6.0\LanchesMAC.RazorAssemblyInfo.cs
+D:\LanchesMAC\obj\Debug\net6.0\staticwebassets.build.json
+D:\LanchesMAC\obj\Debug\net6.0\staticwebassets.development.json
+D:\LanchesMAC\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\LanchesMAC\obj\Debug\net6.0\scopedcss\bundle\LanchesMAC.styles.css
+D:\LanchesMAC\obj\Debug\net6.0\scopedcss\projectbundle\LanchesMAC.bundle.scp.css
+D:\LanchesMAC\obj\Debug\net6.0\LanchesMAC.csproj.CopyComplete
+D:\LanchesMAC\obj\Debug\net6.0\LanchesMAC.dll
+D:\LanchesMAC\obj\Debug\net6.0\ref\LanchesMAC.dll
+D:\LanchesMAC\obj\Debug\net6.0\LanchesMAC.pdb
+D:\LanchesMAC\obj\Debug\net6.0\LanchesMAC.genruntimeconfig.cache
+D:\LanchesMAC\obj\Debug\net6.0\LanchesMAC.csproj.AssemblyReference.cache
+D:\LanchesMAC\bin\Debug\net6.0\ref\LanchesMAC.dll

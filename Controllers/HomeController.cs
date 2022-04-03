@@ -4,28 +4,30 @@ using LanchesMAC.Models;
 using LanchesMAC.Repositories.Interfaces;
 using LanchesMAC.ViewModels;
 
-namespace LanchesMAC.Controllers;
-
-public class HomeController : Controller
+namespace LanchesMAC.Controllers
 {
-    private readonly ILancheRepository _lancheRepository;
 
-    public HomeController(ILancheRepository lancheRepository)
+    public class HomeController : Controller
     {
-        _lancheRepository = lancheRepository;
-    }
-    public IActionResult Index()
-    {
-        var homeViewModel = new HomeViewModel
+        private readonly ILancheRepository _lancheRepository;
+
+        public HomeController(ILancheRepository lancheRepository)
         {
-            LanchesPreferidos = _lancheRepository.LanchesPreferidos
-        };
-        return View(homeViewModel);
-    }
+            _lancheRepository = lancheRepository;
+        }
+        public IActionResult Index()
+        {
+            var homeViewModel = new HomeViewModel
+            {
+                LanchesPreferidos = _lancheRepository.LanchesPreferidos
+            };
+            return View(homeViewModel);
+        }
 
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
     }
 }

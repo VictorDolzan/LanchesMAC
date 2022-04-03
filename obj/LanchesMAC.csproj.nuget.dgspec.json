@@ -1,25 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/LanchesMAC.csproj": {}
+    "D:\\LanchesMAC\\LanchesMAC.csproj": {}
   },
   "projects": {
-    "/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/LanchesMAC.csproj": {
+    "D:\\LanchesMAC\\LanchesMAC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/LanchesMAC.csproj",
+        "projectUniqueName": "D:\\LanchesMAC\\LanchesMAC.csproj",
         "projectName": "LanchesMAC",
-        "projectPath": "/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/LanchesMAC.csproj",
-        "packagesPath": "/home/victor/.nuget/packages/",
-        "outputPath": "/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/obj/",
+        "projectPath": "D:\\LanchesMAC\\LanchesMAC.csproj",
+        "packagesPath": "C:\\Users\\vinic\\.nuget\\packages\\",
+        "outputPath": "D:\\LanchesMAC\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/home/victor/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\vinic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -77,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

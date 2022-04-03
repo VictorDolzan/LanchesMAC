@@ -1,4 +1,4 @@
-namespace LanchesMAC;
+namespace LanchesMAC { 
 public class Program
     {
         public static void Main(string[] args)
@@ -13,7 +13,7 @@ public class Program
                     webBuilder.UseStartup<Startup>();
                 });
     }
-
+}
 // var builder = WebApplication.CreateBuilder(args);
 
 // // Add services to the container.
