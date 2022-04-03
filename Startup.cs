@@ -29,7 +29,8 @@ namespace LanchesMAC
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
-            services.AddControllersWithViews();
+            //services.AddControllersWithViews();
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddMemoryCache();
             services.AddSession();
         }

@@ -6,7 +6,6 @@ using LanchesMAC.ViewModels;
 
 namespace LanchesMAC.Controllers
 {
-
     public class HomeController : Controller
     {
         private readonly ILancheRepository _lancheRepository;
