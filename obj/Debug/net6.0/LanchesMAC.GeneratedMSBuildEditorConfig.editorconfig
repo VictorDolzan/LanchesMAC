@@ -15,12 +15,40 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC
 build_property._RazorSourceGeneratorDebug = 
 
+[/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/Views/CarrinhoCompra/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FycmluaG9Db21wcmEvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/Views/Contato/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udGF0by9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/Views/Lanche/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGFuY2hlL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/Views/Lanche/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGFuY2hlL0xpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/Views/Pedido/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGVkaWRvL0NoZWNrb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/Views/Pedido/CheckoutCompleto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGVkaWRvL0NoZWNrb3V0Q29tcGxldG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/Views/Shared/Components/CarrinhoCompraResumo/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvQ2FycmluaG9Db21wcmFSZXN1bW8vRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/Views/Shared/Components/CategoriaMenu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvQ2F0ZWdvcmlhTWVudS9EZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/Views/Shared/Error.cshtml]
@@ -29,6 +57,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/Views/Shared/_Carousel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19DYXJvdXNlbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/Views/Shared/_LanchesResumo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYW5jaGVzUmVzdW1vLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/Views/Shared/_ValidationScriptsPartial.cshtml]
