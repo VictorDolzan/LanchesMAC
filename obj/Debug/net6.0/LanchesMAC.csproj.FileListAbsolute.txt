@@ -35,3 +35,9 @@
 /home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/bin/Debug/net6.0/Pomelo.EntityFrameworkCore.MySql.dll
 /home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/bin/Debug/net6.0/Pomelo.EntityFrameworkCore.MySql.Design.dll
 /home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/obj/Debug/net6.0/LanchesMAC.csproj.CopyComplete
+/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll
+/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll
+/home/victor/Documents/Udemy/Asp .Net Core MVC(Net 6.0)/LanchesMAC/bin/Debug/net6.0/System.Security.Permissions.dll

@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using LanchesMAC.Repositories;
 using LanchesMAC.Repositories.Interfaces;
 using LanchesMAC.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace LanchesMAC;
 
@@ -21,6 +22,10 @@ public class Startup
         services.AddDbContext<AppDbContext>(options =>
         options.UseMySql(Configuration.GetConnectionString("DefaultConnection"),
         new MySqlServerVersion(new Version())));
+
+        services.AddIdentity<IdentityUser, IdentityRole>()
+        .AddEntityFrameworkStores<AppDbContext>()
+        .AddDefaultTokenProviders();
 
         services.AddTransient<ILancheRepository, LancheRepository>();
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
@@ -55,6 +60,7 @@ public class Startup
 
         app.UseSession();
 
+        app.UseAuthentication();
         app.UseAuthorization();
 
         app.UseEndpoints(endpoints =>
