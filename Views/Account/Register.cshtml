@@ -2,12 +2,12 @@
 
 <table class="table">
     <tr>
-        <td><img src="https://img.icons8.com/dusk/64/000000/add-user-group-man-woman.png" alt="Fazer o login"></td>
+        <td><img src="https://img.icons8.com/dusk/64/000000/checked-user-male.png" alt="Registrar Usuário"></td>
         <td>
             <div class="row">
-                <div class="col-10 col-md-10 col-lg-10">
+                <div class="col-md-12 col-lg-10">
                     <h4>Login</h4>
-                    <form asp-controller="Account" asp-action="Login" method="post" class="form-horizontal" role="form">
+                    <form asp-controller="Account" asp-action="Register" method="post" class="form-horizontal" role="form">
                         <hr />
                         <div asp-validation-summary="All" class="text-danger"></div>
                         <input type="hidden" asp-for="ReturnUrl" />
@@ -27,7 +27,7 @@
                         </div>
                         <div class="form-group">
                             <div class="col-md-8">
-                                <input type="submit" class="btn btn-success" value="Log in" />
+                                <input type="submit" class="btn btn-success" value="Registrar"/>
                             </div>
                         </div>
                     </form>
