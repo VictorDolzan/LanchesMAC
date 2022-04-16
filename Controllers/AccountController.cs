@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using LanchesMAC.ViewModels;
 
 namespace LanchesMAC.Controllers
 {
+    [Authorize]
     public class AccountController : Controller
     {
         private readonly UserManager<IdentityUser> _userManager;
@@ -16,6 +18,7 @@ namespace LanchesMAC.Controllers
             _signInManager = signInManager;
         }
 
+        [AllowAnonymous]
         [HttpGet]
         public IActionResult Login(string returnUrl)
         {
@@ -24,7 +27,8 @@ namespace LanchesMAC.Controllers
                 ReturnUrl = returnUrl
             });
         }
-
+        
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Login(LoginViewModel loginVM)
         {
@@ -51,12 +55,14 @@ namespace LanchesMAC.Controllers
             return View(loginVM);
         }
 
+        [AllowAnonymous]
         [HttpGet]
         public IActionResult Register()
         {
             return View();
         }
 
+        [AllowAnonymous]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(LoginViewModel registroVM)
@@ -82,6 +88,7 @@ namespace LanchesMAC.Controllers
             return View(registroVM);
         }
 
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Logout()
         {
