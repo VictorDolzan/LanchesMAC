@@ -21,7 +21,6 @@
                     @await Component.InvokeAsync("CarrinhoCompraResumo")
                     @await Component.InvokeAsync("CategoriaMenu")
                    <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                   @* <a class="nav-link text-light" asp-area="" asp-controller="Lanche" asp-action="List">Lanches</a> *@
                    <a class="nav-link text-light" asp-area="" asp-controller="Contato" asp-action="Index">Contato</a> 
                    <form class="navbar-form navbar-right" asp-controller="Lanche" asp-action="Search" method="get">
                        <div class="form-group">
@@ -29,6 +28,10 @@
                        </div>
                    </form>
                    @await Html.PartialAsync("_LoginPartial")
+                   @if (User.IsInRole("Admin"))
+                   {
+                       <a class="nav-link text-light" asp-area="Admin" asp-controller="Admin" asp-action="Index">Admin</a>
+                   }
                 </div>
             </div>
         </nav>
