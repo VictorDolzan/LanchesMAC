@@ -4,6 +4,7 @@ using LanchesMAC.Repositories;
 using LanchesMAC.Repositories.Interfaces;
 using LanchesMAC.Models;
 using Microsoft.AspNetCore.Identity;
+using LanchesMAC.Services;
 
 namespace LanchesMAC;
 
@@ -41,9 +42,11 @@ public class Startup
         services.AddTransient<ILancheRepository, LancheRepository>();
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
         services.AddTransient<IPedidoRepository, PedidoRepository>();
-        services.AddScoped(sp => CarrinhoCompra.GetCarrinho(sp));
+        services.AddScoped<ISeedUserRoleInitial, SeedUserRoleInitial>();
 
         services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+        services.AddScoped(sp => CarrinhoCompra.GetCarrinho(sp));
+       
 
         services.AddControllersWithViews();
 
@@ -52,7 +55,8 @@ public class Startup
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+    public void Configure(IApplicationBuilder app,
+     IWebHostEnvironment env, ISeedUserRoleInitial seedUserRoleInitial)
     {
         if (env.IsDevelopment())
         {
@@ -68,6 +72,9 @@ public class Startup
         app.UseStaticFiles();
 
         app.UseRouting();
+
+        seedUserRoleInitial.SeedRoles();
+        seedUserRoleInitial.SeedUser();
 
         app.UseSession();
 
